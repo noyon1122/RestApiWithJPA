@@ -1,0 +1,30 @@
+=========Starting RestAPI==========
+
+1. create a project with the following dependency
+  #Spring web
+  #Spring mySQL Driver
+  #Spring Data JPA
+  #Lombok
+  
+2.Create packages in the main package
+    #controller
+    #repository
+    #service
+    #model/entity
+3.Configure MySQL database
+  #create a database in MySQL
+  #configure it in the project application.properties file in resources folder
+
+4.create classes in all new created packages and create interface in only repository package
+  ->Don't forget to put annotation based on package
+   repository====>> @Repository (JpaRepository interface already provide @Repository annotation so we don't need put this in the reposity class when we will use jpaRepository)
+   controller====>> @RestController
+   service=====>> @Service / @Component
+   model ====> @Entity (if you use lombok than you have to use @Data annotation)
+5. specifies primary key in the Entity class using @Id annotation   
+
+6. create a exception package to handle the exception and in the class use @ResponsesSatus annotation
+
+7.Create REST API in the controller Class
+
+       
